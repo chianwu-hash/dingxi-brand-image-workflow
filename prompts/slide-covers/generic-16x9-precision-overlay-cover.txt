@@ -1,0 +1,44 @@
+Create one complete 16:9 horizontal presentation cover background for Dingxi Elementary School.
+
+Mode:
+- Precision Overlay Mode.
+- The official crest will be added later by fixed overlay.
+- Do not generate any school crest, logo, seal, stamp, official emblem, watermark, QR code, URL, or page number.
+- Leave the top-right corner clean and empty for the official crest overlay.
+- Leave the bottom-left corner clean and empty for the page-number badge if the deck uses page numbers.
+
+Output type:
+- Formal elementary-school administrative presentation cover.
+- Calm, clear, warm, and credible.
+- Not a poster, not a flyer, not a marketing banner.
+
+Visible text, exactly these lines only:
+[主標題第一行]
+[主標題第二行]
+[日期或副標]
+
+Typography:
+- Traditional Chinese only.
+- Large, clean, highly readable text.
+- Keep the title area uncluttered.
+- Do not add extra text.
+
+Composition:
+- Native 16:9 landscape.
+- Keep important content inside safe margins.
+- Use restrained school colors and a polished administrative presentation style.
+- Mascots are optional; if used, use 0 to 2 small mascots near lower edges only.
+- Mascots must not cover text or overlay safe zones.
+
+Mascot reference:
+- Use the uploaded image only as Dingxi Elementary four-mascot character reference.
+- It does not contain the school crest.
+- Keep original mascot colors and silhouettes.
+- Do not invent new mascot species, substitute animals, or merge mascots together.
+- Never add or remove arms, hands, legs, feet, eyes, wings, tails, horns, ears, fins, claws, or extra body parts.
+- Props must be held by existing hands only.
+
+Quality:
+- Exactly one standalone image.
+- Native 16:9 landscape output.
+- No fake crest or extra brand marks.

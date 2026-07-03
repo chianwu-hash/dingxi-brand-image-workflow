@@ -1,0 +1,72 @@
+Create one complete native 4:3 horizontal PowerPoint presentation cover slide for Dingxi Elementary School.
+
+This is for the Dingxi Elementary School parent representative meeting only:
+- Event: 頂溪國小 114學年度第二學期期末家長代表大會
+- Do not mention or imply AI, administrative workbench, platform, system, workshop, product, technology, or any unrelated theme.
+- The visual identity should feel like an elementary school parent meeting presentation cover.
+
+Highest priority instruction:
+- The uploaded brand reference image contains the official Dingxi school crest and the four Dingxi mascots.
+- Use the crest from the uploaded brand reference as the strict reference for the school crest.
+- Reproduce the school crest in the image without changing its design.
+- Do not redraw, redesign, simplify, stylize, modernize, reinterpret, replace, rotate, crop, warp, or invent any part of the crest.
+- Preserve the crest's green outer shape, red central Chinese characters, white interior shapes, proportions, and overall silhouette as closely as possible.
+- If exact crest reproduction is difficult, make the crest smaller and simpler in placement, but do not change its design.
+- Do not create any alternate triangle logo or fake school emblem.
+
+Use the uploaded brand reference image this way:
+- The crest in the reference image is the strict reference for the official school crest.
+- The four mascots in the reference image are the strict reference for the four mascots.
+- Do not invent any new school identity mark, logo, emblem, badge, or mascot.
+
+Canvas and format:
+- Strict native 4:3 landscape slide cover.
+- PowerPoint cover slide, not a poster, not a flyer.
+- Do not create a 16:9 image and crop it to 4:3.
+- Deep green chalkboard background with warm wooden frame and chalk ledge.
+- Elementary school administrative presentation style: warm, clear, professional, and celebratory.
+- Keep all important content inside the 4:3 safe area with generous margins.
+
+Visible text, exactly these lines only:
+頂溪國小 114學年度
+期末家長代表大會
+115年6月16日（星期二）
+
+Composition:
+- Place the official Dingxi crest near the top center.
+- Keep the crest separated from the mascots.
+- Main title centered and very large.
+- Date centered below the title.
+- Put the four mascots along the lower edge or lower corners.
+- The mascots may interact with chalk, books, the chalk ledge, or classroom props, but must not cover the text.
+- Leave the title area uncluttered and highly readable.
+
+Mascot action direction:
+- The mascots should feel lively and integrated with the classroom scene, not stiff sticker cutouts.
+- Give each mascot a simple slide-cover action: waving hello, holding chalk, pointing toward the title, carrying a book, stepping forward, or lightly jumping on the chalk ledge.
+- Use varied poses and a natural rhythm.
+- Keep mascot anatomy faithful to the uploaded reference.
+
+Mascot integrity:
+- Keep original mascot colors and silhouettes from the uploaded mascot reference.
+- Do not invent new mascot species.
+- Never add or remove arms, hands, legs, feet, eyes, wings, tails, horns, ears, fins, claws, or extra body parts.
+- Props must be held by existing hands only.
+- If a pose is hard, simplify the pose; do not change mascot anatomy.
+- Light mascot: yellow round body, one glowing antenna, exactly two arms/hands, exactly two legs/feet, exactly one pair of yellow wings, no tail.
+- Fire mascot: orange-red flame body, exactly two arms/hands, exactly two legs/feet, two front teeth, no wings, no tail.
+- Water mascot: blue water-drop body, exactly one eye, exactly two arms/hands, exactly two legs/feet, no wings, no tail.
+- Tree mascot: orange trunk body with green tree crown, exactly two arms/hands, exactly two legs/feet; leaves, birds, or fruit are decoration, not extra limbs.
+
+Typography:
+- Traditional Chinese only.
+- Large, clean, highly readable chalk-like typography.
+- White or warm cream text with strong contrast on the green chalkboard.
+- The text must be spelled exactly as provided.
+- Do not add extra text, English words, fake URLs, QR codes, watermarks, page numbers, seals, badges, or extra logos.
+
+Quality:
+- Exactly one standalone image.
+- Integrated cohesive design.
+- Native 4:3 landscape output.
+- No fake crest, no alternate crest, no modified crest.

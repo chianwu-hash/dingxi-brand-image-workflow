@@ -1,0 +1,44 @@
+Create one complete native 9:16 vertical LINE notice card for Dingxi Elementary School.
+
+Mode:
+- Native Integrated Brand Mode.
+- The uploaded brand reference image contains the official Dingxi school crest and the four Dingxi mascots.
+- Use this uploaded image as one integrated Dingxi Elementary brand identity reference.
+- Use the crest from the uploaded brand reference as the strict reference for the school crest.
+- Do not redraw, redesign, simplify, stylize, modernize, reinterpret, replace, rotate, crop, warp, or invent any part of the crest.
+- Do not create any alternate triangle logo, fake school emblem, extra seal, stamp, badge, watermark, QR code, URL, or page number.
+
+Output type:
+- Phone-readable LINE notice card.
+- Warm, clear, and school-administrative.
+- Not a poster crowded with text.
+
+Visible text, exactly these lines only:
+[通知主題]
+[日期 / 時間]
+[地點或提醒]
+
+Typography:
+- Traditional Chinese only.
+- Very large, high-contrast text.
+- Keep line count low.
+- Do not add extra words, English filler, fake URLs, QR codes, or watermarks.
+
+Composition:
+- Native 9:16 vertical.
+- Keep important content away from the extreme edges.
+- Place the crest small near the top or upper corner.
+- Use 0 to 2 mascots as small supporting accents near the lower edge or side.
+- Mascots must not cover the date, time, location, or action item.
+
+Mascot integrity:
+- Keep original mascot colors and silhouettes.
+- Do not invent new mascot species, substitute animals, or merge mascots together.
+- Never add or remove arms, hands, legs, feet, eyes, wings, tails, horns, ears, fins, claws, or extra body parts.
+- If a pose is hard, simplify the pose or make the mascot smaller; do not change mascot anatomy.
+
+Quality:
+- Exactly one standalone image.
+- Native 9:16 vertical output.
+- Text must be readable on a phone.
+- Reject the result if the crest becomes fake or drifted.

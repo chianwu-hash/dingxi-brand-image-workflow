@@ -1,0 +1,48 @@
+Create one complete native poster or door-sign image for Dingxi Elementary School.
+
+Mode:
+- Native Integrated Brand Mode.
+- The uploaded brand reference image contains the official Dingxi school crest and the four Dingxi mascots.
+- Use this uploaded image as one integrated Dingxi Elementary brand identity reference.
+- Use the crest from the uploaded brand reference as the strict reference for the school crest.
+- Do not redraw, redesign, simplify, stylize, modernize, reinterpret, replace, rotate, crop, warp, or invent any part of the crest.
+- Do not create any alternate triangle logo, fake school emblem, extra seal, stamp, badge, watermark, QR code, URL, or page number.
+
+Output type:
+- School poster or door sign.
+- Clear at hallway viewing distance.
+- Warm, welcoming, and official enough for school use.
+
+Canvas and format:
+- [Choose one: native A4 portrait / native 3:4 portrait / native 4:5 portrait / native 16:9 landscape].
+- Do not create a different ratio and crop it later.
+- Keep generous margins.
+
+Visible text, exactly these lines only:
+[活動或告示主題]
+[日期 / 時間]
+[地點 / 對象 / 簡短提醒]
+
+Typography:
+- Traditional Chinese only.
+- Large, clean, high-contrast text.
+- Keep text sparse.
+- Do not add extra text, English filler, URLs, QR codes, watermarks, seals, or badges.
+
+Composition:
+- Place the crest clearly but modestly; it should not dominate the poster.
+- Use 0 to 4 mascots if they support the message.
+- Put mascots along the lower edge, corners, or simple scene elements.
+- Keep mascots separated from the crest and away from the main text.
+
+Mascot integrity:
+- Keep original mascot colors and silhouettes.
+- Do not invent new mascot species, substitute animals, or merge mascots together.
+- Never add or remove arms, hands, legs, feet, eyes, wings, tails, horns, ears, fins, claws, or extra body parts.
+- Props must be held by existing hands only.
+- If a pose is hard, simplify the pose or make the mascot smaller; do not change mascot anatomy.
+
+Quality:
+- Exactly one standalone image.
+- No fake crest, no alternate crest, no modified crest.
+- Text must be legible at the intended display size.

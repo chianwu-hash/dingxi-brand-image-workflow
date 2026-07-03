@@ -1,0 +1,18 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+node_modules/
+output/
+scratch/
+.browser-profiles/
+.browser-sessions/
+*.log
+
+# Internal Dingxi brand assets and research scratch.
+# The public repo ships workflow/skill instructions only; actual crest and
+# mascot files stay in the Dingxi internal network AI work-assets folder.
+assets/
+tmp/
+
+# Local/private install notes.
+*.local.*
