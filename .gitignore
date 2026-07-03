@@ -16,3 +16,8 @@ tmp/
 
 # Local/private install notes.
 *.local.*
+
+# Local consolidation notes with machine-specific paths.
+docs/handoff-*.md
+docs/new-thread-prompt.txt
+docs/source-mapping.md
