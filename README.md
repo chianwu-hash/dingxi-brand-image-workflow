@@ -87,6 +87,12 @@ In short:
 
 - `docs/`
   central SOPs and repo-level guidance
+- `docs/PROJECT_MEMORY.md`
+  repo-local AI memory, durable decisions, and source-of-truth boundaries
+- `docs/RUNBOOK.md`
+  repeatable maintenance and validation steps
+- `docs/OPERATIONS_LOG.md`
+  dated major changes and memory-relevant operations
 - `prompts/`
   reusable prompt examples grouped by output type
 - `skills/dingxi-brand-image/`

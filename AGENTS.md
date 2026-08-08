@@ -2,6 +2,15 @@
 
 This repository is the shared Dingxi brand-image knowledge layer.
 
+Before making changes, also read:
+
+- `docs/PROJECT_MEMORY.md`
+- `docs/RUNBOOK.md`
+- `docs/OPERATIONS_LOG.md`
+- `README.md`
+- `docs/dingxi-brand-image-sop.md`
+- `skills/dingxi-brand-image/SKILL.md`
+
 ## Scope
 
 Keep here:
