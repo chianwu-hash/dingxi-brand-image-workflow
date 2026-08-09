@@ -71,6 +71,76 @@ Use when the final output needs an exact official crest.
 
 ```text
 Generate the background/card without any school crest, logo, seal, stamp, watermark, QR code, URL, phone number, or page number.
-Leave the top-right corner clean and empty for a post-production official crest overlay.
-Do not place text, mascots, charts, icons, or important objects in that corner.
+Leave a clean area for post-production official crest overlay. Default to an upper corner unless the composition clearly has a better clean area.
+Do not place text, mascots, faces, charts, icons, QR codes, borders, dense decoration, or important objects in that area.
+Keep the base image without the crest. Add the official crest only afterward as a fixed overlay.
+```
+
+## Unit 8 Activity Poster With Official Crest Overlay
+
+Use when creating Dingxi activity posters, announcement posters, campus event graphics, or other school-identity poster outputs.
+
+Stage 1: organize the activity information before generating the image.
+
+```text
+Organize this activity information for a Dingxi Elementary poster.
+
+Input:
+- Activity name: <activity name>
+- Date and time: <date/time>
+- Location: <location>
+- Audience: <students/parents/teachers/public>
+- Registration or reminder: <registration/reminder>
+- Posting channel: <LINE / bulletin board / school website / print>
+
+Return:
+- main title
+- subtitle if needed
+- short information rows
+- reminder sentence
+- lines that must appear exactly
+Do not generate an image yet.
+```
+
+Stage 2: choose a style.
+
+```text
+Suggest two visual style directions for this activity poster, or follow this user-specified style:
+<style direction>
+
+Keep the style suitable for an elementary school administrative/activity poster.
+Do not generate an image yet.
+```
+
+Stage 3: generate the base image without the crest.
+
+```text
+Create one <vertical/horizontal> Dingxi Elementary activity poster base image.
+
+Visible text, exactly these lines only:
+<approved poster text>
+
+Visual direction:
+<approved style direction>
+
+Layout:
+- Traditional Chinese only.
+- Clear hierarchy: title, key information, reminder.
+- Design for <LINE / bulletin board / school website / print>.
+- Leave a clean area for post-production official crest overlay. Default to an upper corner unless the composition clearly has a better clean area.
+- Do not place text, mascots, faces, charts, icons, QR codes, borders, dense decoration, or important objects in the crest area.
+
+Restrictions:
+- Do not generate any school crest, logo, seal, stamp, badge, watermark, QR code, URL, phone number, or page number.
+- Do not add, remove, or rewrite the approved text.
+- Create exactly one standalone base image without the crest.
+```
+
+Stage 4: post-production.
+
+```text
+Save the generated image as <purpose>-base.
+Overlay the official dingxi-crest.png in the reserved clean area.
+Save the result as <purpose>-final.
+Check that the crest does not cover text, mascots, faces, QR codes, or key visuals.
 ```
