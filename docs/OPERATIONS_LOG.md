@@ -31,3 +31,27 @@ Next-time warnings:
 - Choose crest strategy before prompt writing.
 - Keep browser execution in `browser-automation-workflow`.
 - Keep deck-specific exports in `slidecraft-lab` or the owning project.
+
+## 2026-08-10 — Change poster/card crest overlay guidance to low-interference landing spots
+
+Changed:
+
+- Updated `skills/dingxi-brand-image/SKILL.md` to replace the general "clean crest zone" standard with a "low-interference crest landing spot" standard.
+- Updated `skills/dingxi-brand-image/references/prompt-patterns.md` so Unit 8-style poster prompts preserve balanced composition and avoid large blank logo patches.
+- Updated `docs/dingxi-brand-image-sop.md` and `README.md` to describe modest overlay-safe areas instead of blank crest areas.
+- Updated `docs/PROJECT_MEMORY.md` with the durable decision.
+
+Reason:
+
+- Three ChatGPT poster tests showed that low-interference top-right placement lets the official crest work as a small school identifier without pushing the entire poster composition left.
+- Earlier clean-zone prompts could make the crest area dominate the layout.
+
+Validation:
+
+- Text-only change.
+- No official crest, mascot file, internal source asset, generated output, or private school record was added to the repo.
+
+Next-time warnings:
+
+- For posters, LINE cards, and announcement images, do not ask for a large blank corner unless the user explicitly needs a fixed template safe zone.
+- Keep stricter safe zones available for decks, recurring templates, and dense administrative graphics.

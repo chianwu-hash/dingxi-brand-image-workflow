@@ -56,12 +56,12 @@ Use:
 3. Write or confirm visible text first. Keep cards sparse and phone-readable.
 4. Read `four-mascots-design-intent.md` before choosing mascots.
 5. Select mascots by theme. Explain the choice and wait for user confirmation before generating when the mascot choice affects the design.
-6. Use the single crest workflow for any output that needs school identity: generate a base image without the crest, reserve a clean crest zone, then overlay `dingxi-crest.png` afterward.
+6. Use the single crest workflow for any output that needs school identity: generate a base image without the crest, keep a low-interference crest landing spot, then overlay `dingxi-crest.png` afterward.
 7. Generate with the work browser if requested or implied.
 8. Save both files when practical:
    - `<purpose>-base`: generated base image without crest.
    - `<purpose>-final`: final image after official crest overlay.
-9. QA text, mascot anatomy, brand balance, false logos, crest zone, official crest overlay, and publishing suitability.
+9. QA text, mascot anatomy, brand balance, false logos, crest landing spot, official crest overlay, and publishing suitability.
 
 ## Mascot Theme Selection
 
@@ -97,9 +97,11 @@ Mascots must support the message. Keep them at the bottom or side edge for small
 
 Do not ask the image model to freely generate, redraw, imitate, modify, or merge the official Dingxi crest.
 
-For every output that needs school identity through the crest, generate the background/card/poster without the crest, leave a clean crest zone, then overlay `dingxi-crest.png` by code or manual post-production. This is the only standard crest workflow.
+For every output that needs school identity through the crest, generate the background/card/poster without the crest, keep a low-interference crest landing spot, then overlay `dingxi-crest.png` by code or manual post-production. This is the only standard crest workflow.
 
-Use a crest zone that fits the composition. Default to an upper corner, but do not hard-code top-right if another clean area is more natural. Keep the zone free of text, mascots, faces, key objects, charts, QR codes, borders, and decorative clutter. Record the intended crest position and keep the base image so the overlay can be adjusted later.
+Use a crest landing spot that fits the composition. Default to an upper corner, but do not hard-code top-right if another low-interference area is more natural. The crest is a small brand identifier, not a main design constraint: do not ask the model to reserve a large blank patch, box, frame, spotlight, label, or special logo area. Let the background continue naturally, but keep the landing spot away from text, mascot faces, human faces, key objects, charts, QR codes, borders, and dense decoration. Record the intended crest position and keep the base image so the overlay can be adjusted later.
+
+For formal decks, recurring templates, page-numbered layouts, or dense administrative graphics, a stricter overlay safe zone may still be appropriate. Keep it visually modest and prevent it from unbalancing the page.
 
 Do not use web images, old poster screenshots, or AI-generated crest-like marks as the official crest. Do not commit, upload, or publish the official crest source file.
 
@@ -107,8 +109,9 @@ Prompt reminder:
 
 ```text
 Do not generate any school crest, logo, seal, stamp, official emblem, watermark, QR code, URL, phone number, or page number.
-Leave a clean area for post-production official crest overlay.
-Do not place text, mascots, faces, key objects, icons, charts, QR codes, borders, or dense decoration in that area.
+Keep a low-interference area for post-production official crest overlay.
+Do not reserve a large blank corner, empty patch, visible box, frame, spotlight, label, or special logo area.
+Let the background continue naturally, but avoid text, human faces, mascot faces, main characters, key objects, icons, charts, QR codes, borders, or dense decoration in that area.
 ```
 
 Optional exploration note: if the user explicitly wants to see an AI-native integrated composition, you may mention that AI can be asked to compose naturally with a crest-like element, but it will redraw the crest. Whether such output is usable must be judged case by case by the user; it is not the standard workflow and must not replace the official crest overlay for school-identity outputs.
@@ -119,7 +122,7 @@ When drafting reusable prompts, read:
 
 - `references/prompt-patterns.md`
 
-Use the Unit 7 pattern for「頂溪國小品牌識別生圖」LINE cards and meeting notice cards with theme-selected mascots. Use the activity poster pattern for Unit 8-style posters: organize activity data, choose or ask AI to suggest a style, generate a base image with a clean crest zone, then overlay the official crest.
+Use the Unit 7 pattern for「頂溪國小品牌識別生圖」LINE cards and meeting notice cards with theme-selected mascots. Use the activity poster pattern for Unit 8-style posters: organize activity data, choose or ask AI to suggest a style, generate a base image with a low-interference crest landing spot, then overlay the official crest.
 
 ## QA Checklist
 
@@ -132,7 +135,7 @@ Reject or revise outputs with:
 - mascots covering text or becoming the main subject when not requested
 - wrong aspect ratio for the intended channel
 - formal identity elements generated by the model instead of added as fixed overlay
-- missing clean crest zone when school identity is required
+- missing a viable low-interference crest landing spot when school identity is required
 - official crest overlay covering text, mascots, faces, QR codes, or key visuals
 - final publishing file missing the official crest when the user asked for school identity
 - base/final files not distinguishable when a post-production crest overlay is used

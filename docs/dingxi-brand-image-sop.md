@@ -1,6 +1,6 @@
 # Dingxi Brand Image SOP
 
-Last updated: 2026-06-21
+Last updated: 2026-08-10
 
 ## Goal
 
@@ -24,7 +24,7 @@ Choose the mode before writing the prompt.
 
 | Need | Default Mode | Reference Asset | Crest Handling |
 | --- | --- | --- | --- |
-| Multi-page deck or complex batch | Precision Overlay Mode | `four-mascots-reference.png`, only if mascots help | Leave the crest area blank and add `dingxi-crest.png` after generation |
+| Multi-page deck or complex batch | Precision Overlay Mode | `four-mascots-reference.png`, only if mascots help | Keep a modest overlay-safe crest area and add `dingxi-crest.png` after generation |
 | Recurring template or page-numbered deck | Precision Overlay Mode | `four-mascots-reference.png`, optional | Add crest/page numbers after generation |
 | One-shot slide cover | Usually Native Integrated Brand Mode; use Precision Overlay Mode if exact crest matters | `crest-and-four-mascots-reference.png` for native mode | Generated crest is allowed but must be QA'd |
 | Poster, door sign, welcome visual | Native Integrated Brand Mode | `crest-and-four-mascots-reference.png` | Generated crest is acceptable after QA |
@@ -49,7 +49,7 @@ Typical cases:
 Rules:
 
 - Do not ask the model to generate the official school crest, seal, logo, stamp, page number, or watermark.
-- Reserve a clean safe zone for later overlays.
+- Keep a modest overlay-safe zone for later overlays. For posters, cards, and announcement images, prefer a low-interference natural background area instead of a large blank patch.
 - Add `dingxi-crest.png` afterward by code or manual post-production.
 - Add page numbers afterward when the output is a deck.
 - Upload `four-mascots-reference.png` only when mascots help the message.
@@ -64,9 +64,10 @@ Prompt block:
 
 ```text
 Do not generate any school crest, logo, seal, stamp, official emblem, watermark, or page number.
-Leave the top-right corner clean and empty for the official crest overlay.
+Keep the top-right corner low-interference for the official crest overlay.
 Leave the bottom-left corner clean and empty for the page-number badge.
 Do not place text, icons, metrics, mascots, charts, or important objects in those two corners.
+Do not create a large blank patch, visible box, frame, spotlight, label, or special logo area for the crest unless the deck template explicitly needs a fixed safe zone.
 ```
 
 Mascot reference block:

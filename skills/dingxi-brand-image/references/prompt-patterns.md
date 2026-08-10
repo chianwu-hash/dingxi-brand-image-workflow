@@ -71,8 +71,9 @@ Use when the final output needs an exact official crest.
 
 ```text
 Generate the background/card without any school crest, logo, seal, stamp, watermark, QR code, URL, phone number, or page number.
-Leave a clean area for post-production official crest overlay. Default to an upper corner unless the composition clearly has a better clean area.
-Do not place text, mascots, faces, charts, icons, QR codes, borders, dense decoration, or important objects in that area.
+Keep a low-interference area for post-production official crest overlay. Default to an upper corner unless the composition clearly has a better low-interference area.
+Do not reserve a large blank corner, empty patch, visible box, frame, spotlight, label, or special logo area.
+Let the background continue naturally, but avoid text, human faces, mascot faces, main characters, charts, icons, QR codes, borders, dense decoration, or important objects in that area.
 Keep the base image without the crest. Add the official crest only afterward as a fixed overlay.
 ```
 
@@ -127,8 +128,11 @@ Layout:
 - Traditional Chinese only.
 - Clear hierarchy: title, key information, reminder.
 - Design for <LINE / bulletin board / school website / print>.
-- Leave a clean area for post-production official crest overlay. Default to an upper corner unless the composition clearly has a better clean area.
-- Do not place text, mascots, faces, charts, icons, QR codes, borders, dense decoration, or important objects in the crest area.
+- Keep the whole poster composition balanced and natural.
+- Do not push the main title, people, mascots, or focal point away from the crest corner just to make room for the crest.
+- Keep a low-interference area for post-production official crest overlay. Default to an upper corner unless the composition clearly has a better low-interference area.
+- Do not reserve a large blank corner, empty patch, visible box, frame, spotlight, label, or special logo area.
+- Let the background continue naturally, but avoid text, human faces, mascot faces, main characters, charts, icons, QR codes, borders, dense decoration, or important objects in the crest area.
 
 Restrictions:
 - Do not generate any school crest, logo, seal, stamp, badge, watermark, QR code, URL, phone number, or page number.
@@ -140,7 +144,7 @@ Stage 4: post-production.
 
 ```text
 Save the generated image as <purpose>-base.
-Overlay the official dingxi-crest.png in the reserved clean area.
+Overlay the official dingxi-crest.png in the low-interference crest landing spot.
 Save the result as <purpose>-final.
 Check that the crest does not cover text, mascots, faces, QR codes, or key visuals.
 ```

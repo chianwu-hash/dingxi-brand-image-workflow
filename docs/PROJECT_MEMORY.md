@@ -1,6 +1,6 @@
 # Project Memory
 
-Last reviewed: 2026-08-09
+Last reviewed: 2026-08-10
 
 ## Project identity
 
@@ -60,6 +60,24 @@ Reason:
 - Fake or drifted crests are a predictable failure mode.
 - Exact identity and cohesive native composition have different risk profiles.
 
+### 2026-08-10 Use low-interference crest landing spots for posters/cards
+
+Status: active
+Scope: Precision overlay mode for posters, LINE cards, announcement images, and other visually composed single-image outputs
+Source: `skills/dingxi-brand-image/SKILL.md`, `skills/dingxi-brand-image/references/prompt-patterns.md`, `docs/dingxi-brand-image-sop.md`
+
+Decision:
+
+- The official crest remains a fixed post-production overlay when exact fidelity matters.
+- For posters/cards, prompts should not ask the image model to reserve a large blank corner or special logo box.
+- Ask for a low-interference crest landing spot instead: natural background may continue through the area, but avoid text, faces, mascot faces, main characters, QR codes, and key visuals.
+- Formal decks, recurring templates, and dense administrative graphics may still use stricter overlay safe zones when needed, but the safe zone should remain visually modest.
+
+Reason:
+
+- Tests showed that asking for a clean blank crest zone can make the whole poster composition shift away from the crest corner.
+- The crest is a school identifier, not the main design driver.
+
 ### 2026-08-09 Mascots support the message and require integrity QA
 
 Status: active
@@ -114,6 +132,7 @@ Do not scan parent folders, guess credentials, or copy the whole brand folder.
 | Issue | Root cause | Fix or first response |
 |---|---|---|
 | Fake or drifted crest | Model asked to generate official crest natively without enough constraints | Switch to Precision Overlay Mode or restart with integrated reference and strict QA. |
+| Poster composition shifts away from crest corner | Prompt asks for a large clean/blank crest zone | Use a low-interference crest landing spot and let the background continue naturally. |
 | Mascot anatomy error | Pose too hard, prompt underconstrained, too many mascots | Make mascots smaller, simplify pose, reduce count, reuse mascot integrity rules. |
 | Wrong aspect ratio | Generated in one ratio then cropped | Regenerate in native target ratio. |
 | Theme drift | Prior project context leaks into prompt | Start a fresh conversation and use context-pollution guard. |

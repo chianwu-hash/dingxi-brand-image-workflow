@@ -59,7 +59,7 @@ Integrated crest-plus-mascot references, DX marks, school-name title images, ban
 This repo preserves two valid strategies:
 
 - `Precision Overlay Mode`
-  Use for multi-page generation, complex batches, recurring templates, page-numbered presentations, and outputs where exact crest consistency is required. The generated image leaves the crest area blank, then `dingxi-crest.png` is added afterward.
+  Use for multi-page generation, complex batches, recurring templates, page-numbered presentations, and outputs where exact crest consistency is required. The generated image keeps a modest overlay-safe crest area, then `dingxi-crest.png` is added afterward.
 - `Native Integrated Brand Mode`
   Use for one or a few finished images where visual cohesion matters and the result will be QA'd. This is useful for meeting notice cards, posters, door signs, one-shot covers, LINE cards, and announcement visuals.
 
