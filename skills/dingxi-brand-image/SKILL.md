@@ -35,6 +35,16 @@ Use these files from the internal AI work-assets folder as needed:
 
 Do not commit or upload these source files to a public repo, and do not publish or distribute them as standalone source assets. They may be embedded in authorized final school outputs according to the selected crest workflow.
 
+## Token Budget And Routing
+
+Treat image-generation routing as a hard cost boundary, not a convenience preference.
+
+- On this user's setup, ChatGPT web image generation and Codex consume different subscription usage pools.
+- Built-in Codex `imagegen` consumes Codex tokens heavily. Preserve Codex tokens for orchestration, prompt preparation, file work, compositing, and QA.
+- Route Dingxi brand image generation to the ChatGPT work browser by default. Use Gemini only when the user requests it or the task has already selected that route.
+- Never silently fall back to built-in `imagegen` because browser automation is slow, unavailable, or unsuccessful. Retry and escalate according to the work-browser skill, then report the blocked generation if it still fails.
+- Use built-in `imagegen` only when the user explicitly asks for Codex built-in image generation and thereby accepts the Codex-token cost.
+
 ## Tool Choice
 
 When the user asks for ChatGPT/Gemini/工作瀏覽器 generation or uses「頂溪國小品牌識別生圖」, prefer the ChatGPT or Gemini work-browser route. Do not switch to built-in `imagegen` unless the user explicitly asks for Codex built-in image generation.
