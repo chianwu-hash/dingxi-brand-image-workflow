@@ -1,6 +1,6 @@
 # Project Memory
 
-Last reviewed: 2026-08-10
+Last reviewed: 2026-08-12
 
 ## Project identity
 
@@ -94,6 +94,42 @@ Reason:
 
 - Mascot drift and clutter can damage readability and brand trust.
 
+### 2026-08-12 Preserve immutable mascot identity while allowing free action
+
+Status: active
+Scope: mascot prompts, reference handling, sizing, and QA
+Source: user review of the 2026-08-27 meeting notice card; `skills/dingxi-brand-image/references/mascot-prompt-rules.md`
+
+Decision:
+
+- The model may freely choose mascot pose, motion, expression, direction, and interaction.
+- Every selected mascot must preserve its immutable silhouette, proportions, face, colors, outline style, anatomy, markings, and character-specific symbol or prop.
+- Treat the mascot as the same established official character, not a new elemental mascot inspired by the reference.
+- Use output-specific prominence: small or absent on dense formal slides, moderately prominent on LINE cards/posters, and potentially primary on mascot-led visuals.
+- Verify that the official reference attachment is actually present in the same request. A one-mascot crop may be added as reference but must not be pasted into the final art.
+- Regenerate failed mascot art instead of repairing it with a stiff cutout overlay.
+
+Reason:
+
+- Limb counts alone do not preserve facial construction, proportions, props, or overall character identity.
+- A universal 10% size limit is inappropriate across formal slides, LINE cards, posters, and mascot-led visuals.
+
+### 2026-08-12 Choose one crest corner per task and keep it fixed
+
+Status: active
+Scope: precision overlay mode and same-task visual consistency
+Source: user instruction
+
+Decision:
+
+- Before generation, the AI chooses the best available corner from top-left, top-right, bottom-left, or bottom-right.
+- Record the corner and keep it fixed across the base, final overlay, revisions, and every image in the same task or series.
+- Avoid conflicts with page numbers and other fixed elements. Explicit user placement overrides automatic selection.
+
+Reason:
+
+- Crest placement should respond to composition without drifting between related outputs.
+
 ### 2026-08-09 Browser and deck execution stay in owning repos
 
 Status: active
@@ -133,7 +169,7 @@ Do not scan parent folders, guess credentials, or copy the whole brand folder.
 |---|---|---|
 | Fake or drifted crest | Model asked to generate official crest natively without enough constraints | Switch to Precision Overlay Mode or restart with integrated reference and strict QA. |
 | Poster composition shifts away from crest corner | Prompt asks for a large clean/blank crest zone | Use a low-interference crest landing spot and let the background continue naturally. |
-| Mascot anatomy error | Pose too hard, prompt underconstrained, too many mascots | Make mascots smaller, simplify pose, reduce count, reuse mascot integrity rules. |
+| Mascot identity or anatomy error | Prompt underconstrained, reference not attached, or action requires changed anatomy | Verify the attachment, use the exact character identity block, and choose another action without redesigning the mascot. |
 | Wrong aspect ratio | Generated in one ratio then cropped | Regenerate in native target ratio. |
 | Theme drift | Prior project context leaks into prompt | Start a fresh conversation and use context-pollution guard. |
 | Repo boundary drift | Execution artifacts or browser logic moved here | Move browser execution to `browser-automation-workflow` and deck exports to owning project. |

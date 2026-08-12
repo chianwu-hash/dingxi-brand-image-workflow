@@ -30,17 +30,18 @@ Typography:
 - Do not add extra text, English filler, URLs, QR codes, watermarks, seals, or badges.
 
 Composition:
-- Place the crest clearly but modestly; it should not dominate the poster.
+- Choose one suitable crest corner from top-left, top-right, bottom-left, or bottom-right. Keep that same corner across every revision and poster in this task. Place the crest clearly but modestly.
 - Use 0 to 4 mascots if they support the message.
-- Put mascots along the lower edge, corners, or simple scene elements.
+- Choose mascot size and prominence from the poster purpose; mascots may be supporting elements or a stronger visual focus when the activity is mascot-led.
 - Keep mascots separated from the crest and away from the main text.
 
 Mascot integrity:
-- Keep original mascot colors and silhouettes.
-- Do not invent new mascot species, substitute animals, or merge mascots together.
-- Never add or remove arms, hands, legs, feet, eyes, wings, tails, horns, ears, fins, claws, or extra body parts.
-- Props must be held by existing hands only.
-- If a pose is hard, simplify the pose or make the mascot smaller; do not change mascot anatomy.
+- Generate the same established official Dingxi characters shown in the uploaded reference, not newly invented mascots inspired by them.
+- The AI may freely choose pose, movement, expression, direction, and interaction.
+- Movement may change; character identity may not.
+- Preserve immutable silhouette, proportions, facial construction, colors, outline style, anatomy, limb count, markings, and character-specific symbols or props.
+- Props must use the character's existing anatomy. If an action would require changing anatomy or an immutable feature, choose another action instead.
+- Insert the exact selected-character identity blocks from `skills/dingxi-brand-image/references/mascot-prompt-rules.md` before use.
 
 Quality:
 - Exactly one standalone image.

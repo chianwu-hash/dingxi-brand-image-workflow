@@ -4,8 +4,10 @@ Mode:
 - Precision Overlay Mode.
 - The official crest will be added later by fixed overlay.
 - Do not generate any school crest, logo, seal, stamp, official emblem, watermark, QR code, URL, or page number.
-- Leave the top-right corner clean and empty for the official crest overlay.
-- Leave the bottom-left corner clean and empty for the page-number badge if the deck uses page numbers.
+- Before generation, choose one official crest corner from top-left, top-right, bottom-left, or bottom-right.
+- Selected crest corner for this task: [selected corner]. Keep it unchanged throughout the deck and all revisions.
+- Keep the selected corner low-interference for the official crest overlay.
+- If the deck uses page numbers, choose and record a separate non-overlapping page-number location.
 
 Output type:
 - Formal elementary-school administrative presentation cover.
@@ -27,16 +29,16 @@ Composition:
 - Native 16:9 landscape.
 - Keep important content inside safe margins.
 - Use restrained school colors and a polished administrative presentation style.
-- Mascots are optional; if used, use 0 to 2 small mascots near lower edges only.
+- Mascots are optional; if used, keep them subordinate to the formal cover information. Do not apply the same size rule to unrelated LINE-card, poster, or mascot-led tasks.
 - Mascots must not cover text or overlay safe zones.
 
 Mascot reference:
 - Use the uploaded image only as Dingxi Elementary four-mascot character reference.
 - It does not contain the school crest.
-- Keep original mascot colors and silhouettes.
-- Do not invent new mascot species, substitute animals, or merge mascots together.
-- Never add or remove arms, hands, legs, feet, eyes, wings, tails, horns, ears, fins, claws, or extra body parts.
-- Props must be held by existing hands only.
+- Generate the same established official characters shown in the uploaded reference, not newly invented mascots inspired by them.
+- The AI may freely choose pose and expression, but movement may not change character identity.
+- Preserve immutable silhouette, proportions, facial construction, colors, outline style, anatomy, markings, and signature props.
+- Insert the exact selected-character identity blocks from `skills/dingxi-brand-image/references/mascot-prompt-rules.md` before use.
 
 Quality:
 - Exactly one standalone image.

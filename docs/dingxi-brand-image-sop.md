@@ -1,6 +1,6 @@
 # Dingxi Brand Image SOP
 
-Last updated: 2026-08-10
+Last updated: 2026-08-12
 
 ## Goal
 
@@ -49,24 +49,29 @@ Typical cases:
 Rules:
 
 - Do not ask the model to generate the official school crest, seal, logo, stamp, page number, or watermark.
-- Keep a modest overlay-safe zone for later overlays. For posters, cards, and announcement images, prefer a low-interference natural background area instead of a large blank patch.
+- Before generation, choose one low-interference crest corner from top-left, top-right, bottom-left, or bottom-right. Record it and keep it fixed across every revision and image in the same task.
+- Keep a modest overlay-safe zone in the selected corner. For posters, cards, and announcement images, prefer a low-interference natural background area instead of a large blank patch.
 - Add `dingxi-crest.png` afterward by code or manual post-production.
 - Add page numbers afterward when the output is a deck.
 - Upload `four-mascots-reference.png` only when mascots help the message.
 - Keep mascots optional, small, and away from the main content.
 
-Recommended deck safe zones:
+Recommended deck overlay planning:
 
-- top-right: official crest overlay
-- bottom-left: page-number badge
+- Choose one available corner for the official crest overlay and keep it fixed throughout the deck.
+- If a page-number badge or another fixed element occupies a corner, choose another corner for the crest.
+- An explicit task template or user placement overrides automatic corner selection.
 
 Prompt block:
 
 ```text
 Do not generate any school crest, logo, seal, stamp, official emblem, watermark, or page number.
-Keep the top-right corner low-interference for the official crest overlay.
+Selected official crest corner for this task: <top-left / top-right / bottom-left / bottom-right>.
+Keep this same corner across every revision and image in the task.
+Keep the selected corner low-interference for the official crest overlay.
 Leave the bottom-left corner clean and empty for the page-number badge.
-Do not place text, icons, metrics, mascots, charts, or important objects in those two corners.
+If bottom-left is selected for the crest, move the page-number badge to another recorded location.
+Do not place text, icons, metrics, mascots, charts, or important objects in the recorded overlay areas.
 Do not create a large blank patch, visible box, frame, spotlight, label, or special logo area for the crest unless the deck template explicitly needs a fixed safe zone.
 ```
 
@@ -135,7 +140,7 @@ Scope of this finding:
 Use Precision Overlay Mode by default, especially for multi-page generation.
 
 - Generate each slide as a clean background/content image.
-- Keep the top-right and bottom-left overlay zones empty.
+- Select one crest corner for the task and keep it fixed throughout the deck. Keep any page-number location fixed separately without overlap.
 - Add crest and page numbers after generation.
 - Use 0 to 4 tiny mascots only when they do not interfere with the slide message.
 - Omit mascots on dense workflow, table, data, or procurement slides.
@@ -221,27 +226,31 @@ This is a derived convenience reference assembled from the core crest and four-m
 
 ## Mascot Integrity Rules
 
-Use these rules whenever a prompt asks for Dingxi mascots:
+Use the detailed skill reference `skills/dingxi-brand-image/references/mascot-prompt-rules.md` whenever a prompt asks for Dingxi mascots. The official image remains authoritative.
+
+Core rules:
 
 ```text
-Use the uploaded image only as Dingxi Elementary four-mascot character reference.
-Keep original colors and silhouettes.
-Do not invent new mascot species, substitute animals, or merge mascots together.
-Never add or remove arms, hands, legs, feet, eyes, wings, tails, horns, ears, fins, claws, or extra body parts.
-Props must be held by existing hands only.
-If a pose is hard, simplify the pose or make the mascot smaller; do not change mascot anatomy.
-Light mascot: yellow round body, one glowing antenna, exactly two arms/hands, exactly two legs/feet, exactly one pair of yellow wings, no tail.
-Fire mascot: orange-red flame body, exactly two arms/hands, exactly two legs/feet, two front teeth, no wings, no tail.
-Water mascot: blue water-drop body, exactly one eye, exactly two arms/hands, exactly two legs/feet, no wings, no tail.
-Tree mascot: orange trunk body with green tree crown, exactly two arms/hands, exactly two legs/feet; leaves, birds, or fruit are decoration, not extra limbs.
+Use the uploaded image as the strict appearance reference for Dingxi Elementary's established official mascot characters.
+Generate the same official character in the new scene, not a newly invented mascot inspired by the reference.
+The AI may freely choose pose, gesture, movement, direction, expression, and interaction to suit the scene.
+Movement may change; character identity may not.
+Preserve immutable silhouette, proportions, facial construction, colors, outline style, anatomy, limb count, distinctive markings, and character-specific symbols or props.
+If an action would require changing anatomy or an immutable feature, choose another action instead.
 ```
 
-Sizing guidance:
+Reference handling:
 
-- Small LINE cards: 0 to 2 mascots.
-- Posters and covers: 0 to 4 mascots if they support the scene.
-- Formal dense slides: mascots may be omitted.
-- Do not place mascots at the center unless the output is explicitly mascot-led.
+- Attach the official reference in the same request and verify the visible attachment thumbnail before sending.
+- For a one-mascot task, also attach a temporary crop of the selected mascot when practical. Use it only as model reference, not as a pasted final layer.
+
+Adaptive sizing guidance:
+
+- Formal or information-dense slides: small supporting mascots or none; about 6–12% of image height is a common guideline, not a hard limit.
+- Administrative LINE cards and friendly notices: one selected mascot may commonly occupy about 15–25% of image height when text remains clear.
+- Posters and activity visuals: mascots may commonly occupy about 15–30% of image height.
+- Mascot introductions, anniversaries, and brand-led visuals: mascots may be the main subjects without a fixed percentage cap.
+- Do not shrink a mascot until identity features become unreadable or enlarge it until required information is obstructed.
 
 ## Prompt Rules
 
@@ -303,10 +312,11 @@ Symptoms:
 
 Recovery:
 
-- Make mascots smaller.
-- Simplify actions.
-- Reduce mascot count.
-- Reuse the full mascot integrity rules.
+- Reuse the exact selected-character identity block from `mascot-prompt-rules.md`.
+- Verify that the official reference attachment was actually sent with the prompt.
+- Choose another action if the current action requires changed anatomy; action freedom does not permit identity drift.
+- Reduce mascot count only when characters are merging or becoming anatomically ambiguous.
+- Regenerate the mascot as part of the scene; do not repair it by pasting a stiff cutout into the final image.
 
 ### Theme Drift
 
@@ -331,7 +341,9 @@ Check every generated output for:
 - crest fidelity or correct crest safe zone
 - no fake crest, fake seal, extra badge, watermark, URL, or QR code
 - mascot anatomy fidelity
+- mascot immutable-identity fidelity, including face, proportions, colors, outline, symbols, and props
 - mascot size and placement
+- same-task mascot style consistency and fixed crest-corner consistency
 - Traditional Chinese text accuracy
 - date, school year, event name, location, and action item accuracy
 - no unrelated project theme

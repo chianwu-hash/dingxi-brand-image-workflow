@@ -56,12 +56,13 @@ Use:
 3. Write or confirm visible text first. Keep cards sparse and phone-readable.
 4. Read `four-mascots-design-intent.md` before choosing mascots.
 5. Select mascots by theme. Explain the choice and wait for user confirmation before generating when the mascot choice affects the design.
-6. Use the single crest workflow for any output that needs school identity: generate a base image without the crest, keep a low-interference crest landing spot, then overlay `dingxi-crest.png` afterward.
-7. Generate with the work browser if requested or implied.
-8. Save both files when practical:
+6. Read `references/mascot-prompt-rules.md` whenever mascots appear. Attach the official reference in the same request and verify its thumbnail before sending. For one-mascot work, also use a temporary crop of that mascot as model reference when practical; never paste that crop into the final art.
+7. For the official crest overlay, choose one low-interference corner from top-left, top-right, bottom-left, or bottom-right before generation. Record it and keep it fixed across every revision and image in the same task unless the user explicitly changes it.
+8. Generate with the work browser if requested or implied. Use an output-specific prompt; do not rely on a generic batch runner to inject brand, mascot-size, or deck-layout rules.
+9. Save both files when practical:
    - `<purpose>-base`: generated base image without crest.
    - `<purpose>-final`: final image after official crest overlay.
-9. QA text, mascot anatomy, brand balance, false logos, crest landing spot, official crest overlay, and publishing suitability.
+10. QA text, immutable mascot identity, anatomy, brand balance, false logos, fixed crest corner, official crest overlay, and publishing suitability.
 
 ## Mascot Theme Selection
 
@@ -76,22 +77,21 @@ Use all four only for mascot introductions, school anniversary, complete brand-i
 
 ## Mascot Integrity Rules
 
-Include these rules whenever mascots appear:
+Read and use [references/mascot-prompt-rules.md](references/mascot-prompt-rules.md) whenever mascots appear. Include the core block plus the exact identity block for each selected mascot.
+
+Apply these non-negotiable principles:
 
 ```text
-Use the uploaded image only as Dingxi Elementary four-mascot character reference.
-Keep original colors and silhouettes.
-Do not invent new mascot species, substitute animals, or merge mascots together.
-Never add or remove arms, hands, legs, feet, eyes, wings, tails, horns, ears, fins, claws, or extra body parts.
-Props must be held by existing hands only.
-If a pose is hard, simplify the pose or make the mascot smaller; do not change mascot anatomy.
-Light mascot: yellow round body, one glowing antenna, exactly two arms/hands, exactly two legs/feet, exactly one pair of yellow wings, no tail.
-Fire mascot: orange-red flame body, exactly two arms/hands, exactly two legs/feet, two front teeth, no wings, no tail.
-Water mascot: blue water-drop body, exactly one eye, exactly two arms/hands, exactly two legs/feet, no wings, no tail.
-Tree mascot: orange trunk body with green tree crown, exactly two arms/hands, exactly two legs/feet; leaves, birds, or fruit are decoration, not extra limbs.
+Generate the same established official Dingxi mascot shown in the uploaded reference, not a new mascot inspired by it.
+The AI may freely choose pose, gesture, movement, direction, expression, and interaction to suit the scene.
+Movement may change; character identity may not.
+Preserve immutable silhouette, proportions, facial construction, colors, outline style, anatomy, limb count, distinctive markings, and character-specific symbols or props.
+If an action would require changing anatomy or an immutable feature, choose another action instead.
 ```
 
-Mascots must support the message. Keep them at the bottom or side edge for small cards, away from dates, times, locations, QR codes, tables, and action items.
+Choose mascot prominence by output type instead of applying one universal size limit. Formal or dense slides usually need small supporting mascots or none; LINE cards and posters may use a more prominent mascot; mascot introductions and brand-led visuals may make mascots the main subjects. Keep approved text and required information readable in every case.
+
+Within one task or series, keep character proportions, palette, outline treatment, and rendering style consistent. Poses may change. Identity treatment may not.
 
 ## Crest Rules
 
@@ -99,7 +99,9 @@ Do not ask the image model to freely generate, redraw, imitate, modify, or merge
 
 For every output that needs school identity through the crest, generate the background/card/poster without the crest, keep a low-interference crest landing spot, then overlay `dingxi-crest.png` by code or manual post-production. This is the only standard crest workflow.
 
-Use a crest landing spot that fits the composition. Default to an upper corner, but do not hard-code top-right if another low-interference area is more natural. The crest is a small brand identifier, not a main design constraint: do not ask the model to reserve a large blank patch, box, frame, spotlight, label, or special logo area. Let the background continue naturally, but keep the landing spot away from text, mascot faces, human faces, key objects, charts, QR codes, borders, and dense decoration. Record the intended crest position and keep the base image so the overlay can be adjusted later.
+Before generation, choose the best low-interference corner from top-left, top-right, bottom-left, or bottom-right. Record that corner and keep it fixed across the base image, final overlay, revisions, and every image in the same task or series. Do not silently switch corners. If a page-number badge or other fixed element occupies a corner, choose another available corner. An explicit user placement overrides this default.
+
+The crest is a small brand identifier, not a main design constraint: do not ask the model to reserve a large blank patch, box, frame, spotlight, label, or special logo area. Let the background continue naturally, but keep the selected corner away from text, mascot faces, human faces, key objects, charts, QR codes, borders, and dense decoration. Keep the base image so the overlay can be adjusted later without changing corners.
 
 For formal decks, recurring templates, page-numbered layouts, or dense administrative graphics, a stricter overlay safe zone may still be appropriate. Keep it visually modest and prevent it from unbalancing the page.
 
@@ -109,7 +111,9 @@ Prompt reminder:
 
 ```text
 Do not generate any school crest, logo, seal, stamp, official emblem, watermark, QR code, URL, phone number, or page number.
-Keep a low-interference area for post-production official crest overlay.
+Selected official crest corner for this task: <top-left / top-right / bottom-left / bottom-right>.
+Keep this same corner across every revision and image in the task.
+Keep that corner low-interference for post-production official crest overlay.
 Do not reserve a large blank corner, empty patch, visible box, frame, spotlight, label, or special logo area.
 Let the background continue naturally, but avoid text, human faces, mascot faces, main characters, key objects, icons, charts, QR codes, borders, or dense decoration in that area.
 ```
@@ -131,11 +135,14 @@ Reject or revise outputs with:
 - wrong event text, date, time, location, or target audience
 - unreadable, misspelled, or non-Traditional-Chinese text
 - fake crest, fake logo, seal, stamp, badge, watermark, URL, QR code, or phone number
-- mascot anatomy errors, including extra/missing hands, feet, eyes, wings, tails, horns, ears, fins, or claws
+- mascot identity drift, including changed silhouette, proportions, face, color, outline style, symbols, or character-specific props
+- mascot anatomy errors, including extra/missing hands, feet, eyes, mouths, teeth, tongues, antennae, wing-shaped appendages, tails, horns, ears, fins, or claws
+- cropped, blocked, fused, or anatomically ambiguous mascots
+- inconsistent mascot proportions or rendering style within the same task
 - mascots covering text or becoming the main subject when not requested
 - wrong aspect ratio for the intended channel
 - formal identity elements generated by the model instead of added as fixed overlay
-- missing a viable low-interference crest landing spot when school identity is required
+- missing the recorded low-interference crest corner or switching corners within the same task
 - official crest overlay covering text, mascots, faces, QR codes, or key visuals
 - final publishing file missing the official crest when the user asked for school identity
 - base/final files not distinguishable when a post-production crest overlay is used

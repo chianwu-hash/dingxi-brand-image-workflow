@@ -48,15 +48,12 @@ Mascot action direction:
 - Keep mascot anatomy faithful to the uploaded reference.
 
 Mascot integrity:
-- Keep original mascot colors and silhouettes from the uploaded mascot reference.
-- Do not invent new mascot species.
-- Never add or remove arms, hands, legs, feet, eyes, wings, tails, horns, ears, fins, claws, or extra body parts.
-- Props must be held by existing hands only.
-- If a pose is hard, simplify the pose; do not change mascot anatomy.
-- Light mascot: yellow round body, one glowing antenna, exactly two arms/hands, exactly two legs/feet, exactly one pair of yellow wings, no tail.
-- Fire mascot: orange-red flame body, exactly two arms/hands, exactly two legs/feet, two front teeth, no wings, no tail.
-- Water mascot: blue water-drop body, exactly one eye, exactly two arms/hands, exactly two legs/feet, no wings, no tail.
-- Tree mascot: orange trunk body with green tree crown, exactly two arms/hands, exactly two legs/feet; leaves, birds, or fruit are decoration, not extra limbs.
+- Generate the same established official Dingxi characters shown in the uploaded reference, not newly invented mascots inspired by them.
+- The AI may freely choose pose, movement, expression, direction, and interaction for the classroom scene.
+- Movement may change; character identity may not.
+- Preserve immutable silhouette, proportions, facial construction, colors, outline style, anatomy, markings, and character-specific symbols or props.
+- Keep every mascot separate and complete. Do not exchange colors, faces, limbs, symbols, or props between mascots.
+- Insert all four exact character identity blocks from `skills/dingxi-brand-image/references/mascot-prompt-rules.md` before reuse of this prompt.
 
 Typography:
 - Traditional Chinese only.

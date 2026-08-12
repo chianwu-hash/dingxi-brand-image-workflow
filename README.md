@@ -35,6 +35,10 @@ After installation, a user can trigger the workflow with natural language such a
 
 The skill does not ship official brand image files. It expects Dingxi staff to access the internal network AI work-assets folder and copy the needed files locally during the workflow.
 
+Mascot generation treats the four mascots as established characters: actions may vary freely, but silhouette, proportions, face, colors, anatomy, markings, and signature props remain fixed. Mascot prominence is selected by output type rather than one universal percentage limit.
+
+When a fixed official crest overlay is used, the AI selects one suitable corner from the four corners before generation and keeps that corner unchanged throughout the task or series.
+
 ## Internal Brand Material Split
 
 The core brand-image source package is intentionally limited to the internal network AI work-assets folder:

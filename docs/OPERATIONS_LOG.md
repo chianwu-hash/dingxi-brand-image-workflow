@@ -4,6 +4,28 @@ This file records dated changes that future AI assistants and maintainers may ne
 
 Do not record or commit official crest files, mascot image files, source brand assets, generated one-off outputs, private network credentials, browser sessions, or sensitive school records.
 
+## 2026-08-12 — Strengthen mascot identity and make crest placement task-adaptive
+
+Changed:
+
+- Added reusable per-character immutable identity prompt blocks for all four Dingxi mascots.
+- Allowed free mascot actions while prohibiting changes to character identity, anatomy, facial construction, colors, markings, and signature props.
+- Replaced the universal small-mascot assumption with output-specific prominence guidance.
+- Added attachment verification and optional single-mascot crop guidance for model reference only.
+- Changed precision-overlay crest placement from a preferred upper/right location to one AI-selected corner that remains fixed throughout the task.
+- Updated the skill, prompt patterns, SOP, runbook, project memory, and reusable prompt examples.
+
+Reason:
+
+- A meeting-card test produced a generic blue water-drop character that met limb-count rules but did not preserve the official Sea Mascot's face, proportions, book, or overall identity.
+- LINE cards, formal slides, posters, and mascot-led visuals need different mascot prominence.
+- Crest placement should adapt to composition but remain consistent within a task.
+
+Validation:
+
+- Text-only public-repo change; no official crest, mascot image, generated output, or private record is included.
+- Skill validation and repository safety checks completed before commit.
+
 ## 2026-08-09 — Add repo-local AI memory layer
 
 Changed:

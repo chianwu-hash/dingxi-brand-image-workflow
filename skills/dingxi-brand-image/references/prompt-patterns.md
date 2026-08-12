@@ -12,6 +12,7 @@ Create one vertical 9:16 LINE meeting notice card for Dingxi Elementary School.
 Use the uploaded image only as Dingxi Elementary four-mascot character reference.
 Use only the mascots confirmed by the user:
 <chosen mascots and reason>
+Insert the core prompt block and selected character identity blocks from mascot-prompt-rules.md.
 
 Visible text, exactly these lines only:
 頂溪國小
@@ -27,14 +28,17 @@ Design direction:
 - Large readable text with generous spacing.
 - Warm, clean, official-but-friendly elementary school administrative style.
 - Dingxi deep green, warm cream, soft golden yellow, muted sky blue, fresh leaf green.
-- Place the selected mascot(s) as small supporting accents near the lower edge or side edge.
+- Choose mascot size and prominence from this LINE-card purpose. A selected mascot may be moderately prominent and naturally integrated into the composition.
 - Mascots must not cover or compete with the meeting information.
+- Selected official crest corner for this task: <top-left / top-right / bottom-left / bottom-right>.
+- Keep that same corner low-interference across every revision and card in this task for the post-production official crest overlay.
 
 Mascot identity:
-- Keep original colors and silhouettes from the uploaded reference.
-- Do not invent new mascot species.
-- Do not add or remove body parts.
-- If a pose is difficult, make the mascot smaller or simpler.
+- Generate the same established official Dingxi mascot shown in the uploaded reference, not a new mascot inspired by it.
+- The AI may freely choose pose, movement, expression, and interaction to suit the scene.
+- Movement may change; character identity may not.
+- Preserve immutable silhouette, proportions, face, colors, outline style, anatomy, distinctive markings, and character-specific symbols or props.
+- If an action would require changing anatomy or an immutable feature, choose another action instead.
 
 Restrictions:
 - Do not generate any school crest, logo, seal, stamp, badge, watermark, QR code, URL, phone number, meeting link, or page number.
@@ -71,7 +75,10 @@ Use when the final output needs an exact official crest.
 
 ```text
 Generate the background/card without any school crest, logo, seal, stamp, watermark, QR code, URL, phone number, or page number.
-Keep a low-interference area for post-production official crest overlay. Default to an upper corner unless the composition clearly has a better low-interference area.
+Before generation, select one official crest corner for the task: top-left, top-right, bottom-left, or bottom-right.
+Record the selected corner and keep it unchanged across every base image, final image, revision, and image in the same task.
+Selected official crest corner for this task: <selected corner>.
+Keep that corner low-interference for post-production official crest overlay.
 Do not reserve a large blank corner, empty patch, visible box, frame, spotlight, label, or special logo area.
 Let the background continue naturally, but avoid text, human faces, mascot faces, main characters, charts, icons, QR codes, borders, dense decoration, or important objects in that area.
 Keep the base image without the crest. Add the official crest only afterward as a fixed overlay.
@@ -129,8 +136,11 @@ Layout:
 - Clear hierarchy: title, key information, reminder.
 - Design for <LINE / bulletin board / school website / print>.
 - Keep the whole poster composition balanced and natural.
-- Do not push the main title, people, mascots, or focal point away from the crest corner just to make room for the crest.
-- Keep a low-interference area for post-production official crest overlay. Default to an upper corner unless the composition clearly has a better low-interference area.
+- Before generation, select and record one official crest corner for the task: top-left, top-right, bottom-left, or bottom-right.
+- Selected official crest corner for this task: <selected corner>.
+- Keep the selected corner unchanged across every revision and image in the same task.
+- Do not push the main title, people, mascots, or focal point away from the selected crest corner just to make room for the crest.
+- Keep that corner low-interference for post-production official crest overlay.
 - Do not reserve a large blank corner, empty patch, visible box, frame, spotlight, label, or special logo area.
 - Let the background continue naturally, but avoid text, human faces, mascot faces, main characters, charts, icons, QR codes, borders, dense decoration, or important objects in the crest area.
 
@@ -144,7 +154,8 @@ Stage 4: post-production.
 
 ```text
 Save the generated image as <purpose>-base.
-Overlay the official dingxi-crest.png in the low-interference crest landing spot.
+Overlay the official dingxi-crest.png in the recorded task corner: <selected corner>.
 Save the result as <purpose>-final.
 Check that the crest does not cover text, mascots, faces, QR codes, or key visuals.
+Keep the same corner for every revision and image in this task unless the user explicitly changes it.
 ```
