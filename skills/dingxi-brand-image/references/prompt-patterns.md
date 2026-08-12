@@ -9,7 +9,7 @@ Use when the user says「頂溪國小品牌識別生圖」or asks for a Dingxi L
 ```text
 Create one vertical 9:16 LINE meeting notice card for Dingxi Elementary School.
 
-Use the uploaded image only as Dingxi Elementary four-mascot character reference.
+Use the uploaded official Dingxi crest image as the strict crest reference, and use the uploaded mascot image only as Dingxi Elementary four-mascot character reference.
 Use only the mascots confirmed by the user:
 <chosen mascots and reason>
 Insert the core prompt block and selected character identity blocks from mascot-prompt-rules.md.
@@ -30,8 +30,8 @@ Design direction:
 - Dingxi deep green, warm cream, soft golden yellow, muted sky blue, fresh leaf green.
 - Choose mascot size and prominence from this LINE-card purpose. A selected mascot may be moderately prominent and naturally integrated into the composition.
 - Mascots must not cover or compete with the meeting information.
-- Selected official crest corner for this task: <top-left / top-right / bottom-left / bottom-right>.
-- Keep that same corner low-interference across every revision and card in this task for the post-production official crest overlay.
+- Redraw the same Dingxi crest as a naturally integrated part of this single composition. Preserve its green three-direction outer silhouette, central green ring, white inner field, red 頂溪 core lettering, red-green palette, and overall proportions.
+- Balance the whole composition around the crest. Do not paste it as a sticker or place it inside a visible box, backing plate, slot, label, spotlight, circular badge area, or artificial blank reservation.
 
 Mascot identity:
 - Generate the same established official Dingxi mascot shown in the uploaded reference, not a new mascot inspired by it.
@@ -41,10 +41,13 @@ Mascot identity:
 - If an action would require changing anatomy or an immutable feature, choose another action instead.
 
 Restrictions:
-- Do not generate any school crest, logo, seal, stamp, badge, watermark, QR code, URL, phone number, meeting link, or page number.
+- Do not invent another logo, shield, seal, stamp, badge, watermark, QR code, URL, phone number, meeting link, or page number.
+- Do not add English, a year, ribbon, or extra lettering to the crest.
 - Do not include real personal data.
 - Create exactly one standalone image.
 ```
+
+Record the result as AI-redrawn from the official crest reference. Reject and regenerate if the crest lettering is unreadable or its defining silhouette and colors drift materially.
 
 ## Plain Meeting Notice Card
 
@@ -84,7 +87,7 @@ Let the background continue naturally, but avoid text, human faces, mascot faces
 Keep the base image without the crest. Add the official crest only afterward as a fixed overlay.
 ```
 
-## Unit 8 Activity Poster With Official Crest Overlay
+## Unit 8 Activity Poster With AI-Native Crest Integration
 
 Use when creating Dingxi activity posters, announcement posters, campus event graphics, or other school-identity poster outputs.
 
@@ -120,10 +123,12 @@ Keep the style suitable for an elementary school administrative/activity poster.
 Do not generate an image yet.
 ```
 
-Stage 3: generate the base image without the crest.
+Stage 3: generate the complete poster with the crest integrated into the composition.
 
 ```text
-Create one <vertical/horizontal> Dingxi Elementary activity poster base image.
+Create one <vertical/horizontal> Dingxi Elementary activity poster.
+
+Use the uploaded official Dingxi crest image as the strict crest reference.
 
 Visible text, exactly these lines only:
 <approved poster text>
@@ -136,26 +141,21 @@ Layout:
 - Clear hierarchy: title, key information, reminder.
 - Design for <LINE / bulletin board / school website / print>.
 - Keep the whole poster composition balanced and natural.
-- Before generation, select and record one official crest corner for the task: top-left, top-right, bottom-left, or bottom-right.
-- Selected official crest corner for this task: <selected corner>.
-- Keep the selected corner unchanged across every revision and image in the same task.
-- Do not push the main title, people, mascots, or focal point away from the selected crest corner just to make room for the crest.
-- Keep that corner low-interference for post-production official crest overlay.
-- Do not reserve a large blank corner, empty patch, visible box, frame, spotlight, label, or special logo area.
-- Let the background continue naturally, but avoid text, human faces, mascot faces, main characters, charts, icons, QR codes, borders, dense decoration, or important objects in the crest area.
+- Redraw the same Dingxi crest as a naturally integrated part of the poster. Preserve its green three-direction outer silhouette, central green ring, white inner field, red 頂溪 core lettering, red-green palette, and overall proportions.
+- Choose a location and scale that balance the whole poster.
+- Do not paste the crest as a sticker or create a visible box, backing plate, slot, label, spotlight, circular badge area, or artificial blank reservation behind it.
 
 Restrictions:
-- Do not generate any school crest, logo, seal, stamp, badge, watermark, QR code, URL, phone number, or page number.
+- Do not invent another logo, shield, seal, stamp, badge, watermark, QR code, URL, phone number, or page number.
+- Do not add English, a year, ribbon, or extra lettering to the crest.
 - Do not add, remove, or rewrite the approved text.
-- Create exactly one standalone base image without the crest.
+- Create exactly one complete standalone image.
 ```
 
-Stage 4: post-production.
+Stage 4: QA and recordkeeping.
 
 ```text
-Save the generated image as <purpose>-base.
-Overlay the official dingxi-crest.png in the recorded task corner: <selected corner>.
-Save the result as <purpose>-final.
-Check that the crest does not cover text, mascots, faces, QR codes, or key visuals.
-Keep the same corner for every revision and image in this task unless the user explicitly changes it.
+Save the generated image as <purpose>-final.
+Check that the crest is readable, preserves the defining official silhouette and colors, has no added lettering, and integrates naturally without a box or sticker effect.
+Record that the crest was AI-redrawn from the official crest reference.
 ```

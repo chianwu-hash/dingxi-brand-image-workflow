@@ -4,6 +4,28 @@ This file records dated changes that future AI assistants and maintainers may ne
 
 Do not record or commit official crest files, mascot image files, source brand assets, generated one-off outputs, private network credentials, browser sessions, or sensitive school records.
 
+## 2026-08-12 — Default single images to AI-native crest redraw
+
+Changed:
+
+- Made Native Integrated Brand Mode the default for one standalone LINE card, meeting notice, announcement image, poster, door sign, or one-shot cover.
+- Made Precision Overlay Mode the default for decks, multi-image series, recurring templates, formal documents, certificates, awards, and exact-crest requirements.
+- Required the official crest reference and visible attachment verification for native mode.
+- Added crest identity QA for readable `頂溪`, green three-direction silhouette, central ring, red-green palette, no extra lettering, and no box/backing plate/sticker effect.
+- Required side-by-side crest comparison, user confirmation for borderline redraws, and reading the internal AI usage guide before using brand assets.
+- Required native results to be recorded as AI-redrawn from the official reference.
+- Updated the skill, reusable prompt patterns, SOP, README, runbook, memory, and native prompt examples.
+
+Reason:
+
+- In the 2026-08-27 school-affairs meeting card workflow, reserving space for a post-production crest produced an unbalanced upper layout and a visible rounded logo container.
+- Regenerating the whole 9:16 image with official crest and mascot references allowed ChatGPT to balance the crest, title, and illustration as one composition; the user approved that result.
+- Multi-page and repeatable outputs still need fixed overlays for consistency and exact crest fidelity.
+
+Validation:
+
+- Text-only public-repo change; no official crest, mascot image, generated output, or private record is included.
+
 ## 2026-08-12 — Strengthen mascot identity and make crest placement task-adaptive
 
 Changed:

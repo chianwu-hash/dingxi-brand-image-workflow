@@ -6,16 +6,15 @@ This is for the Dingxi Elementary School parent representative meeting only:
 - The visual identity should feel like an elementary school parent meeting presentation cover.
 
 Highest priority instruction:
-- The uploaded brand reference image contains the official Dingxi school crest and the four Dingxi mascots.
-- Use the crest from the uploaded brand reference as the strict reference for the school crest.
-- Reproduce the school crest in the image without changing its design.
-- Do not redraw, redesign, simplify, stylize, modernize, reinterpret, replace, rotate, crop, warp, or invent any part of the crest.
+- The uploaded official crest image is the strict reference for the Dingxi school crest. The uploaded mascot images are strict character references.
+- Verify every attachment thumbnail before sending this prompt.
+- Redraw the same Dingxi crest as a naturally integrated part of this one-shot cover; do not paste it as a sticker or invent a new logo.
 - Preserve the crest's green outer shape, red central Chinese characters, white interior shapes, proportions, and overall silhouette as closely as possible.
-- If exact crest reproduction is difficult, make the crest smaller and simpler in placement, but do not change its design.
+- Preserve readable red 頂溪 core lettering and do not add English, a year, ribbon, shield, seal, watermark, or other lettering to the crest.
 - Do not create any alternate triangle logo or fake school emblem.
 
 Use the uploaded brand reference image this way:
-- The crest in the reference image is the strict reference for the official school crest.
+- The official crest image is the strict crest reference.
 - The four mascots in the reference image are the strict reference for the four mascots.
 - Do not invent any new school identity mark, logo, emblem, badge, or mascot.
 
@@ -34,6 +33,7 @@ Visible text, exactly these lines only:
 
 Composition:
 - Place the official Dingxi crest near the top center.
+- Integrate it into the same chalkboard illustration treatment without a visible box, backing plate, slot, label, spotlight, circular badge area, or artificial blank reservation.
 - Keep the crest separated from the mascots.
 - Main title centered and very large.
 - Date centered below the title.

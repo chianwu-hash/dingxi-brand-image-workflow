@@ -2,10 +2,10 @@ Create one complete native poster or door-sign image for Dingxi Elementary Schoo
 
 Mode:
 - Native Integrated Brand Mode.
-- The uploaded brand reference image contains the official Dingxi school crest and the four Dingxi mascots.
-- Use this uploaded image as one integrated Dingxi Elementary brand identity reference.
-- Use the crest from the uploaded brand reference as the strict reference for the school crest.
-- Do not redraw, redesign, simplify, stylize, modernize, reinterpret, replace, rotate, crop, warp, or invent any part of the crest.
+- The uploaded official crest image is the strict reference for the Dingxi school crest. The uploaded mascot images are strict character references.
+- Verify every attachment thumbnail before sending this prompt.
+- Redraw the same Dingxi crest as a naturally integrated part of this single composition; do not paste it as a sticker or invent a new logo.
+- Preserve the green three-direction outer silhouette, central green ring, white inner field, red 頂溪 core lettering, red-green palette, and overall proportions.
 - Do not create any alternate triangle logo, fake school emblem, extra seal, stamp, badge, watermark, QR code, URL, or page number.
 
 Output type:
@@ -30,7 +30,8 @@ Typography:
 - Do not add extra text, English filler, URLs, QR codes, watermarks, seals, or badges.
 
 Composition:
-- Choose one suitable crest corner from top-left, top-right, bottom-left, or bottom-right. Keep that same corner across every revision and poster in this task. Place the crest clearly but modestly.
+- Let the model choose a balanced crest location and scale for the whole composition unless the user specifies them.
+- Do not create a visible box, backing plate, slot, label, spotlight, circular badge area, or artificial blank reservation behind the crest.
 - Use 0 to 4 mascots if they support the message.
 - Choose mascot size and prominence from the poster purpose; mascots may be supporting elements or a stronger visual focus when the activity is mascot-led.
 - Keep mascots separated from the crest and away from the main text.
@@ -45,5 +46,6 @@ Mascot integrity:
 
 Quality:
 - Exactly one standalone image.
-- No fake crest, no alternate crest, no modified crest.
+- Reject the result if 頂溪 is unreadable, the crest silhouette or colors drift materially, extra lettering appears, or the crest has a box/sticker effect.
+- Record the accepted result as AI-redrawn from the official crest reference.
 - Text must be legible at the intended display size.

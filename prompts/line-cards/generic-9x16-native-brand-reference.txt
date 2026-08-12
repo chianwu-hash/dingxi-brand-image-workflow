@@ -2,10 +2,10 @@ Create one complete native 9:16 vertical LINE notice card for Dingxi Elementary 
 
 Mode:
 - Native Integrated Brand Mode.
-- The uploaded brand reference image contains the official Dingxi school crest and the four Dingxi mascots.
-- Use this uploaded image as one integrated Dingxi Elementary brand identity reference.
-- Use the crest from the uploaded brand reference as the strict reference for the school crest.
-- Do not redraw, redesign, simplify, stylize, modernize, reinterpret, replace, rotate, crop, warp, or invent any part of the crest.
+- The uploaded official crest image is the strict reference for the Dingxi school crest. The uploaded mascot images are strict character references.
+- Verify every attachment thumbnail before sending this prompt.
+- Redraw the same Dingxi crest as a naturally integrated part of this single composition; do not paste it as a sticker or invent a new logo.
+- Preserve the green three-direction outer silhouette, central green ring, white inner field, red 頂溪 core lettering, red-green palette, and overall proportions.
 - Do not create any alternate triangle logo, fake school emblem, extra seal, stamp, badge, watermark, QR code, URL, or page number.
 
 Output type:
@@ -27,7 +27,8 @@ Typography:
 Composition:
 - Native 9:16 vertical.
 - Keep important content away from the extreme edges.
-- Choose one suitable crest corner from top-left, top-right, bottom-left, or bottom-right, and keep that same corner across every revision and card in this task.
+- Let the model choose a balanced crest location and scale for the whole composition unless the user specifies them.
+- Do not create a visible box, backing plate, slot, label, spotlight, circular badge area, or artificial blank reservation behind the crest.
 - Use 0 to 2 mascots. Choose their prominence for this LINE-card purpose; a selected mascot may be moderately prominent and naturally integrated.
 - Mascots must not cover the date, time, location, or action item.
 
@@ -43,4 +44,5 @@ Quality:
 - Exactly one standalone image.
 - Native 9:16 vertical output.
 - Text must be readable on a phone.
-- Reject the result if the crest becomes fake or drifted.
+- Reject the result if 頂溪 is unreadable, the crest silhouette or colors drift materially, extra lettering appears, or the crest has a box/sticker effect.
+- Record the accepted result as AI-redrawn from the official crest reference.

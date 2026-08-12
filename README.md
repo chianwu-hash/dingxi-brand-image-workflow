@@ -37,7 +37,7 @@ The skill does not ship official brand image files. It expects Dingxi staff to a
 
 Mascot generation treats the four mascots as established characters: actions may vary freely, but silhouette, proportions, face, colors, anatomy, markings, and signature props remain fixed. Mascot prominence is selected by output type rather than one universal percentage limit.
 
-When a fixed official crest overlay is used, the AI selects one suitable corner from the four corners before generation and keeps that corner unchanged throughout the task or series.
+For one standalone card, poster, announcement image, or one-shot cover, the default is AI-native crest integration from the uploaded official reference so the model can balance the whole composition. For a deck, multi-image series, recurring template, formal document, or exact-crest requirement, the default is a fixed official crest overlay in one consistent recorded corner.
 
 ## Internal Brand Material Split
 
@@ -65,9 +65,9 @@ This repo preserves two valid strategies:
 - `Precision Overlay Mode`
   Use for multi-page generation, complex batches, recurring templates, page-numbered presentations, and outputs where exact crest consistency is required. The generated image keeps a modest overlay-safe crest area, then `dingxi-crest.png` is added afterward.
 - `Native Integrated Brand Mode`
-  Use for one or a few finished images where visual cohesion matters and the result will be QA'd. This is useful for meeting notice cards, posters, door signs, one-shot covers, LINE cards, and announcement visuals.
+  Use by default for one standalone finished image where visual cohesion matters and the result will be QA'd. Upload the official crest reference, ask the model to redraw the same crest as part of the composition, and record the result as AI-redrawn. This is useful for meeting notice cards, posters, door signs, one-shot covers, LINE cards, and announcement visuals.
 
-The 2026-06-16 parent-meeting cover test found that directly uploading the combined `crest + four mascots` brand reference can reduce crest drift for native small-batch generation. That finding supports meeting notice cards, posters, and one-shot covers; it does not replace fixed crest overlays as the safest default for multi-page deck production.
+The 2026-06-16 parent-meeting cover test found that directly uploading a combined brand reference can reduce crest drift. The 2026-08-27 meeting-card test further showed that strict official crest and mascot references, verified attachments, explicit redraw rules, and a ban on logo containers can produce a more balanced single-image layout than reserving a post-production crest landing spot. These findings support cards, posters, and one-shot covers; they do not replace fixed crest overlays for multi-page deck production.
 
 That combined reference is a derived convenience asset for Native Integrated Brand Mode, not part of the core source package.
 

@@ -14,7 +14,7 @@ Brand identity supports the message. It should create recognition, warmth, and c
 
 The core source package is limited to the official Dingxi crest and the four Dingxi mascots. Integrated brand reference images, school-name marks, DX marks, themed variants, event artwork, flags, calligraphy, and past production references are extended or derived assets. Use them only when they help the specific output.
 
-First judge the task's complexity and consistency risk. Multi-page or repeatable outputs should keep fixed identity elements out of the generated image and add them afterward. Small-batch outputs such as meeting notice cards, posters, and single slide covers can let the image model generate the crest natively when the result will be visually checked.
+First judge the task's complexity and consistency risk. Multi-page or repeatable outputs should keep fixed identity elements out of the generated image and add them afterward. One standalone meeting notice card, poster, announcement image, or one-shot cover should let the image model redraw the crest from an uploaded official reference so it can balance the whole composition, provided the result receives visual QA.
 
 When exact identity matters across many pages, use fixed overlays. When the product is only one or a few images and a cohesive visual matters, use native integrated generation with QA.
 
@@ -26,9 +26,9 @@ Choose the mode before writing the prompt.
 | --- | --- | --- | --- |
 | Multi-page deck or complex batch | Precision Overlay Mode | `four-mascots-reference.png`, only if mascots help | Keep a modest overlay-safe crest area and add `dingxi-crest.png` after generation |
 | Recurring template or page-numbered deck | Precision Overlay Mode | `four-mascots-reference.png`, optional | Add crest/page numbers after generation |
-| One-shot slide cover | Usually Native Integrated Brand Mode; use Precision Overlay Mode if exact crest matters | `crest-and-four-mascots-reference.png` for native mode | Generated crest is allowed but must be QA'd |
-| Poster, door sign, welcome visual | Native Integrated Brand Mode | `crest-and-four-mascots-reference.png` | Generated crest is acceptable after QA |
-| LINE card, meeting notice card, or announcement image | Native Integrated Brand Mode by default for small-batch products; use Precision Overlay Mode only if exact crest is required | `crest-and-four-mascots-reference.png` for native mode | Keep text sparse and phone-readable; QA crest before use |
+| One-shot slide cover | Native Integrated Brand Mode; use Precision Overlay Mode if it belongs to a deck or exact crest matters | `dingxi-crest.png` plus mascot references as needed | AI-redrawn crest is allowed but must be QA'd and recorded |
+| Poster, door sign, welcome visual | Native Integrated Brand Mode | `dingxi-crest.png` plus mascot references as needed | AI-redrawn crest is acceptable after QA and recordkeeping |
+| One LINE card, meeting notice card, or announcement image | Native Integrated Brand Mode; use Precision Overlay Mode for a repeatable set or exact crest requirement | `dingxi-crest.png` plus mascot references as needed | Keep text sparse and phone-readable; QA and record the AI-redrawn crest |
 | Dense information graphic | Precision Overlay Mode or no mascots | `four-mascots-reference.png`, optional | Avoid generated crest and excess brand marks |
 
 If the output is a multi-page deck, complex batch, or repeatable template, choose Precision Overlay Mode unless the user explicitly accepts generated-crest risk.
@@ -85,7 +85,7 @@ Do not generate any school crest, logo, seal, stamp, official emblem, or school 
 
 ## Mode 2: Native Integrated Brand Mode
 
-Use this when the output is one or a few images, benefits from one cohesive generated scene, and limited crest drift is acceptable after visual QA.
+Use this by default when the output is one standalone image, benefits from one cohesive generated scene, and limited crest drift is acceptable after visual QA. A small set may also use this mode only when each image can be reviewed independently and cross-image crest consistency is not required.
 
 Typical cases:
 
@@ -99,39 +99,43 @@ Typical cases:
 Rules:
 
 - Start a fresh ChatGPT conversation when practical.
-- Upload `crest-and-four-mascots-reference.png` as the primary brand reference.
-- Tell the model the uploaded image is one integrated Dingxi brand identity reference.
-- Make crest preservation a highest-priority instruction.
+- Upload `dingxi-crest.png` as the strict crest reference. Also upload `four-mascots-reference.png` and a one-mascot crop when mascots appear.
+- Verify every attachment thumbnail before sending.
+- Tell the model to redraw the same crest as an integrated part of this one composition, not paste it as a sticker or invent a new logo.
+- Make crest preservation and whole-composition balance highest-priority instructions.
+- Forbid a visible box, backing plate, slot, label, spotlight, circular badge area, or artificial blank reservation behind the crest.
 - Ask for a native image in the final target aspect ratio; do not generate 16:9 and crop to 4:3 or 9:16 later.
 - Warn that exact crest fidelity is not guaranteed.
-- QA the crest, text, and mascot anatomy before use.
+- QA the crest, text, and mascot anatomy before use, and record that the crest was AI-redrawn from the official reference.
 
 Highest-priority prompt block:
 
 ```text
-The uploaded brand reference image contains the official Dingxi school crest and the four Dingxi mascots.
-Use this uploaded image as one integrated Dingxi Elementary brand identity reference.
-Use the crest from the uploaded brand reference as the strict reference for the school crest.
-Do not redraw, redesign, simplify, stylize, modernize, reinterpret, replace, rotate, crop, warp, or invent any part of the crest.
-Do not create any alternate triangle logo, fake school emblem, extra seal, stamp, badge, watermark, QR code, URL, or page number.
-If exact crest reproduction is difficult, make the crest smaller and simpler in placement, but do not change its design.
+Use the uploaded official Dingxi crest image as the strict visual reference.
+Redraw the same crest as a naturally integrated part of this single composition; do not paste it as a sticker or invent a new logo.
+Preserve the green three-direction outer silhouette, central green ring, white inner field, red 頂溪 core lettering, red-green palette, and overall proportions.
+Balance the full composition around the crest.
+Do not create a visible box, backing plate, slot, label, spotlight, circular badge area, or artificial blank reservation behind it.
+Do not add English, a year, ribbon, shield, seal, watermark, or other lettering to the crest.
 ```
 
 ## 2026-06-16 Practical Finding
 
-For native integrated brand generation, directly uploading the combined `crest + four mascots` brand reference reduced crest drift in the parent-meeting cover test compared with uploading separate crest and mascot files or mixing in old cover references.
+An earlier native-generation test found that the combined `crest + four mascots` reference could reduce crest drift compared with loosely constrained separate files. The 2026-08-27 meeting-card test then showed that a strict official crest reference plus explicit redraw and no-container rules can produce a better-balanced single-image composition than reserving a post-production landing spot.
 
 Observed pattern:
 
-- Separate crest and mascot references made the model more likely to invent a simplified or fake triangle-like crest.
-- One integrated brand reference helped the model treat the crest and mascots as one Dingxi identity system.
+- Separate references without explicit attachment verification and identity blocks made the model more likely to invent a simplified crest or generic mascot.
+- An integrated reference can help the model treat the crest and mascots as one identity system; separate official references can also work when every thumbnail is verified and the prompt strictly constrains the crest and each mascot.
 - Native mascot actions worked better when the mascots were generated as part of the scene rather than pasted as stiff stickers.
+- A post-production crest landing spot can distort a single-card layout or create a visible box; native redraw lets the model rebalance the whole upper composition.
 
 Scope of this finding:
 
 - Applies to meeting notice cards, one-shot covers, posters, door signs, and other small-batch main visuals.
 - Does not replace Precision Overlay Mode for multi-page decks, complex batches, recurring templates, or outputs where crest fidelity must be exact across many pages.
 - Generated crest results still require visual QA and may need rejection.
+- Record accepted native results as AI-redrawn from the official reference, not as the untouched official crest.
 
 ## Output-Type Guidance
 
@@ -158,16 +162,16 @@ Choose based on the purpose.
 
 Native Integrated Brand Mode is usually the better first pass.
 
-- Use the integrated brand reference image.
+- Upload the official crest reference and mascot references needed for the specific design.
 - Keep text large and sparse.
 - Put mascots near edges, lower corners, or simple environmental props.
-- Reject fake crests, extra badges, QR codes, URLs, or invented school marks.
+- Require natural crest integration without a box or sticker effect. Reject unreadable `頂溪`, drifted silhouettes or colors, extra badges, QR codes, URLs, or invented school marks.
 
 ### LINE Cards And Notice Images
 
 Choose the mode by batch size and crest precision.
 
-- For one or a few meeting notice cards, use Native Integrated Brand Mode by default.
+- For one standalone meeting notice card, use Native Integrated Brand Mode by default.
 - If the card belongs to a larger repeatable set or the crest must be exact, generate without the crest and overlay `dingxi-crest.png`.
 - Keep text short, high-contrast, and phone-readable.
 - Prefer 0 to 2 mascots on small cards.
@@ -193,13 +197,14 @@ Internal source:
 
 ### `dingxi-crest.png`
 
-Use when the official crest must be exact.
+Use as the crest source in both modes.
 
 - overlay source for formal decks
 - overlay source for official notices
+- strict visual reference for one-image native integration
 - visual source for QA
 
-Do not rely on native generation when this exact file fidelity is required.
+Do not rely on native generation when exact file fidelity is required. In native mode, record that the accepted crest was AI-redrawn.
 
 ### `four-mascots-reference.png`
 
@@ -213,14 +218,14 @@ Do not ask the model to generate the school crest in this mode.
 
 ### `crest-and-four-mascots-reference.png`
 
-Use when native integrated brand generation is intentionally selected.
+Use as an optional integrated atmosphere reference when it helps native generation.
 
 - posters
 - one-shot covers
 - door signs
 - warm single-image announcement visuals
 
-This asset can reduce crest drift for all-in-one generation, but it does not guarantee exact crest fidelity.
+This asset can reduce crest drift for all-in-one generation, but it does not replace the official `dingxi-crest.png` strict reference or exact mascot identity references when those are available.
 
 This is a derived convenience reference assembled from the core crest and four-mascot sources. It belongs to the extended/reference layer, not the core source package.
 
@@ -261,7 +266,7 @@ Adaptive sizing guidance:
 - Keep visible text sparse, especially for LINE cards and posters.
 - Exclude unrelated project themes when context pollution is likely.
 - Ask for one standalone image, not a collage, contact sheet, grid, or multi-panel set.
-- For native crest generation, explicitly forbid redesign, simplification, reinterpretation, fake emblems, and alternate triangle logos.
+- For native crest generation, explicitly require a redraw of the same referenced crest, whole-composition balance, no backing container, and no alternate emblem or added lettering.
 
 Context-pollution guard:
 
@@ -285,9 +290,10 @@ Symptoms:
 Recovery:
 
 - For multi-page or complex output, switch to Precision Overlay Mode.
-- For native output, restart with a fresh conversation and upload only `crest-and-four-mascots-reference.png`.
-- Make the crest smaller and simpler in placement.
-- Strengthen the "do not redesign" prompt block.
+- For native output, restart with a fresh conversation and reattach `dingxi-crest.png` plus only the mascot references needed.
+- Verify the attachment thumbnails.
+- Strengthen the identity, readable `頂溪`, no-container, and no-extra-lettering blocks.
+- Let the model rebalance location and scale; do not repair a failed crest with a stiff cutout unless switching the whole task to Precision Overlay Mode.
 
 ### Wrong Aspect Ratio
 
@@ -338,12 +344,12 @@ Check every generated output for:
 
 - correct mode choice for the output type
 - correct aspect ratio and orientation
-- crest fidelity or correct crest safe zone
+- native crest identity and integration, or correct precision-overlay safe zone
 - no fake crest, fake seal, extra badge, watermark, URL, or QR code
 - mascot anatomy fidelity
 - mascot immutable-identity fidelity, including face, proportions, colors, outline, symbols, and props
 - mascot size and placement
-- same-task mascot style consistency and fixed crest-corner consistency
+- same-task mascot style consistency; fixed crest-corner and size consistency when using Precision Overlay Mode
 - Traditional Chinese text accuracy
 - date, school year, event name, location, and action item accuracy
 - no unrelated project theme

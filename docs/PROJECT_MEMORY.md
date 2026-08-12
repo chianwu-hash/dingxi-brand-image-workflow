@@ -60,6 +60,25 @@ Reason:
 - Fake or drifted crests are a predictable failure mode.
 - Exact identity and cohesive native composition have different risk profiles.
 
+### 2026-08-12 Default single images to native crest redraw and series to precision overlay
+
+Status: active
+Scope: crest strategy for Dingxi branded outputs
+Source: user-approved 2026-08-27 meeting-card production test
+
+Decision:
+
+- For one standalone LINE card, meeting notice, announcement image, poster, door sign, or one-shot cover, default to Native Integrated Brand Mode.
+- Attach the official crest reference in the same request, verify the thumbnail, and ask the model to redraw the same crest as part of the composition.
+- For decks, multi-image series, recurring templates, page-numbered layouts, formal documents, certificates, awards, or exact crest requirements, default to Precision Overlay Mode.
+- Native results must be recorded as AI-redrawn from the official reference. Explicit user instructions override defaults.
+
+Reason:
+
+- A fixed overlay landing spot created imbalance and a visible logo container in the meeting-card test.
+- Letting the model compose around the referenced crest produced a more balanced single image.
+- Fixed overlays remain safer for cross-page consistency and exact identity.
+
 ### 2026-08-10 Use low-interference crest landing spots for posters/cards
 
 Status: active
@@ -167,7 +186,8 @@ Do not scan parent folders, guess credentials, or copy the whole brand folder.
 
 | Issue | Root cause | Fix or first response |
 |---|---|---|
-| Fake or drifted crest | Model asked to generate official crest natively without enough constraints | Switch to Precision Overlay Mode or restart with integrated reference and strict QA. |
+| Fake or drifted crest | Native mode lacks the official reference, verified attachment, or identity constraints | Reattach `dingxi-crest.png`, require readable 頂溪 and defining silhouette/colors, regenerate, or switch to Precision Overlay Mode. |
+| Crest looks pasted or sits in a box | Prompt reserves a logo area instead of integrating the crest | For one-image native mode, forbid boxes/backing plates/slots and let the model rebalance the full composition. |
 | Poster composition shifts away from crest corner | Prompt asks for a large clean/blank crest zone | Use a low-interference crest landing spot and let the background continue naturally. |
 | Mascot identity or anatomy error | Prompt underconstrained, reference not attached, or action requires changed anatomy | Verify the attachment, use the exact character identity block, and choose another action without redesigning the mascot. |
 | Wrong aspect ratio | Generated in one ratio then cropped | Regenerate in native target ratio. |
@@ -179,5 +199,5 @@ Do not scan parent folders, guess credentials, or copy the whole brand folder.
 
 - Use Traditional Chinese when communicating.
 - Keep official school identity protected.
-- Prefer exact fixed overlays when output scale or formality makes crest fidelity important.
+- Prefer native referenced crest redraw for one standalone card/poster when composition matters; prefer exact fixed overlays when output scale, repetition, or formality makes fidelity and consistency important.
 - Keep prompt patterns reusable and source-controlled, but keep generated one-off outputs out of this repo.
